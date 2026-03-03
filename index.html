@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furkan Ertürk - Özgeçmiş</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #7f8c8d;
+        --background-color: #f8f9fa;
+        --highlight-color: #e9ecef;
+        --link-color: #3498db;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 2rem;
+        background-color: var(--background-color);
+        color: var(--primary-color);
+      }
+
+      .container {
+        max-width: 900px;
+        margin: auto;
+        background: #fff;
+        padding: 3rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        position: relative;
+      }
+
+      .header {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: flex-start; 
+        margin-bottom: 2.5rem;
+        border-bottom: 2px solid var(--highlight-color);
+        padding-bottom: 1.5rem;
+      }
+
+      .header-left {
+        text-align: left;
+      }
+
+      .header-right {
+        text-align: right;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 2.8rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        color: var(--primary-color); 
+      }
+
+      .header .tagline {
+        margin: 0.5rem 0 0;
+        color: var(--secondary-color);
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .contact-info {
+        font-size: 0.95rem;
+        margin-top: 0; 
+        color: var(--secondary-color);
+      }
+
+      .contact-info span,
+      .contact-info a {
+        display: block; 
+        margin-bottom: 0.2rem;
+      }
+
+      .section {
+        margin-bottom: 2.5rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        border-bottom: 2px solid var(--highlight-color);
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .work-item,
+      .project-item,
+      .education-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+      }
+
+      .work-item h3,
+      .project-item h4,
+      .education-item h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--primary-color);
+      }
+
+      .work-item .company,
+      .work-item .description,
+      .project-item .tech-stack,
+      .education-item .company {
+        margin: 0.2rem 0;
+        color: var(--secondary-color);
+      }
+      
+      .education-item .gpa {
+         font-size: 0.9rem;
+         color: #27ae60;
+         font-weight: bold;
+      }
+
+      .work-item .date,
+      .education-item .date {
+        font-style: italic;
+        color: var(--secondary-color);
+        min-width: 140px;
+        text-align: right;
+      }
+
+      .skills-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+      }
+
+      .skills-list li {
+        background-color: var(--highlight-color);
+        color: var(--primary-color);
+        padding: 0.4rem 0.9rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: 0;
+        }
+        .header-right {
+          text-align: left;
+          margin-top: 1rem;
+        }
+        .work-item,
+        .project-item,
+        .education-item {
+          flex-direction: column;
+        }
+        .work-item .date,
+        .education-item .date {
+          text-align: left;
+          margin-top: 0.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-left">
+          <h1>Furkan Ertürk</h1>
+          <p class="tagline">
+            Siber Güvenlik Mezunu | IT Operasyon Uzmanı
+          </p>
+        </div>
+        <div class="header-right">
+          <div class="contact-info">
+            <span>ferturkk82@gmail.com</span>
+            <span>+90 545 914 51 88</span>
+            <span>Kocaeli, Gebze, Türkiye</span>
+            <a href="https://github.com/Furkaxia">github.com/Furkaxia</a>
+            <a href="https://www.linkedin.com/in/furkan-ertürk-19778b338/"
+              >linkedin.com/in/furkan-ertürk</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Özet</h2>
+        <p>
+          Bandırma Onyedi Eylül Üniversitesi Siber Güvenlik bölümünden yüksek dereceyle (3.14/4.00) mezun oldum. Turkcell Veri Merkezi'ndeki stajım boyunca sunucu yönetimi, donanım yapılandırması ve ağ altyapısı konularında kapsamlı ve uygulamalı deneyim kazandım. Ağ güvenliği alanındaki akademik altyapımı, IT operasyonları ve Python tabanlı otomasyon becerilerimle harmanlayarak dinamik bir teknoloji ekibine profesyonel değer katmayı hedefliyorum.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">İş Deneyimi</h2>
+        <div class="work-item">
+          <div>
+            <h3>Veri Merkezi Stajyeri</h3>
+            <p class="company">TURKCELL Global Bilgi (Gebze Veri Merkezi)</p>
+            <p class="description">
+              Türkiye'nin en büyük veri merkezinde fiziksel sunucu kurulumlarını ve donanım bakımlarını yürüttüm. Uzaktan sunucu yönetimi için HP ILO sistemlerini yapılandırdım ve IP ağ ayarlarını gerçekleştirdim. Sistem sağlığını aktif olarak izleyip donanım seviyesindeki arızalara profesyonel müdahalede bulundum.
+            </p>
+          </div>
+          <div class="date">Şubat 2025 - Haziran 2025</div>
+        </div>
+        <div class="work-item">
+          <div>
+            <h3>IT Destek Stajyeri</h3>
+            <p class="company">İdeatek Bilgisayar & Yazılım</p>
+            <p class="description">
+              Masaüstü ve dizüstü sistemler için donanım arıza tespiti, montaj ve onarım işlemlerini gerçekleştirdim. Yazılım kurulumlarına destek vererek müşteri cihazları için teknik destek süreçlerini başarıyla yönettim.
+            </p>
+          </div>
+          <div class="date">Eylül 2022 - Haziran 2023</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Eğitim</h2>
+        <div class="education-item">
+          <div>
+            <h3>Siber Güvenlik (Önlisans)</h3>
+            <p class="company">Bandırma Onyedi Eylül Üniversitesi</p>
+            <p class="gpa">Ortalama: 3.14 / 4.00</p>
+          </div>
+          <p class="date">Mezuniyet: Haziran 2025</p>
+        </div>
+        <div class="education-item">
+          <div>
+            <h3>Web Tasarımı ve Grafik</h3>
+            <p class="company">Mehmet Tuğrul Tekbulut MTAL</p>
+          </div>
+          <p class="date">2020 - 2023</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Yetenekler</h2>
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript</li>
+          <li>Ağ Güvenliği (Network Security)</li>
+          <li>Linux Yönetimi</li>
+          <li>Sunucu Donanımı (HP/Dell)</li>
+          <li>ILO Yapılandırması</li>
+          <li>Windows Server</li>
+          <li>Sorun Giderme (Troubleshooting)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Projeler</h2>
+        <div class="project-item">
+          <div>
+            <h4>FurkaxiaBot (Özel Otomasyon Sistemi)</h4>
+            <p class="tech-stack">Node.js, JavaScript, AWS/VDS, Discord.js</p>
+            <p>
+              Bulut VDS üzerinde 7/24 çalışan özel bir otomasyon botu geliştirip canlıya aldım. Gerçek zamanlı kullanıcı etkileşimlerini yönetmek için Discord ve yayın platformlarıyla entegrasyon sağladım. Sunucu çalışma süresini (uptime), süreç izlemeyi (PM2) ve bulut kaynak optimizasyonunu bizzat yönettim.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div>
+            <h4>Otomatik Güvenlik Log Analiz Aracı</h4>
+            <p class="tech-stack">Python, RegEx, File I/O</p>
+            <p>
+               Sunucu log analizini otomatikleştirmek amacıyla Python tabanlı bir güvenlik aracı geliştirdim. Yazdığım script ile regex desen eşleştirmesi kullanarak Brute Force ve SQL Injection gibi potansiyel siber tehditleri tespit edip raporladım.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div>
+            <h4>Kurumsal Web Geliştirme</h4>
+            <p class="tech-stack">HTML, CSS, JavaScript</p>
+            <p>
+              Yerel bir işletme için duyarlı (responsive) kurumsal bir web sitesi şablonu tasarlayıp geliştirdim. Temiz UI/UX prensiplerine ve mobil uyumluluğa odaklandım. (Not: İşletme kapandığı için proje arşivlenmiştir).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Yabancı Dil</h2>
+        <p>
+          <strong>Türkçe:</strong> Ana Dil<br />
+          <strong>İngilizce:</strong> B1/B2 (Orta-Üst Düzey)
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
